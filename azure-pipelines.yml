@@ -13,5 +13,9 @@ jobs:
   steps:
   - script: echo Hello, world!
     displayName: 'Run a one-line script'
+- job: job3
+  steps:
+  - script: echo Hello, world!
+    displayName: 'Run a one-line script'
 
 
