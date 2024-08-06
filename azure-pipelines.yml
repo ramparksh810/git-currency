@@ -16,10 +16,10 @@ stages:
     - bash: ls -R $(System.DefaultWorkingDirectory)
     - task: CopyFiles@2
       inputs:
-        SourceFolder: '''$(System.DefaultWorkingDirectory)'''
+        SourceFolder: '$(System.DefaultWorkingDirectory)'
         Contents: |
           **/*.yml
           **/*.tf
-        TargetFolder: '''$(Build.ArtifactStagingDirectory)'''
+        TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
     - bash: ls -R $(Build.ArtifactStagingDirectory)
