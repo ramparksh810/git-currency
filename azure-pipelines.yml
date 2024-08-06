@@ -20,5 +20,6 @@ stages:
           **/*.yml
           **/*.tf
         TargetFolder: '''$(Build.ArtifactStagingDirectory)'''
+    - bash: ls -R $(Build.ArtifactStagingDirectory)
 
   
