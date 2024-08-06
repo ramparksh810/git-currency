@@ -10,6 +10,7 @@ jobs:
     displayName: 'Run a one-line script'
     
 - job: job2
+  dependsOn:
   steps:
   - script: echo Hello, world!
     displayName: 'Run a one-line script'
