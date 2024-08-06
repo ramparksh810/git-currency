@@ -8,5 +8,5 @@ stages:
   jobs:
   - job: job1
     steps:
-    - bash: echo $(build.Build.Number)
+    - bash: echo $(Build.Build.Number)
   
