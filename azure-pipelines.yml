@@ -13,6 +13,12 @@ stages:
     - bash: echo '$(Build.SourceBranchName)'
     - bash: ls -R $(Build.SourceDirectory)
     - bash: ls -R $(Build.ArtifactStagingDirectory)
-    
+    - task: CopyFiles@2
+      inputs:
+        SourceFolder: '''$(System.DefaultWorkingDirectory)'''
+        Contents: |
+          **/*.yml
+          **/*.tf
+        TargetFolder: '''$(Build.ArtifactStagingDirectory)'''
 
   
