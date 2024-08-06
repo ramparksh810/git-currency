@@ -1,8 +1,11 @@
 trigger:
 - Master
+jobs:
+  -job: job1
 
 pool:
   vmImage: ubuntu-latest
+
 
 steps:
 - script: echo Hello, world!
