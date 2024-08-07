@@ -8,6 +8,9 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: 'azure_rsa.pub'
 - task: TerraformTaskV4@4
   inputs:
     provider: 'azurerm'
