@@ -17,20 +17,9 @@ steps:
     provider: 'azurerm'
     command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/azure/kubernetes'
-    commandOptions: '- var client_id=$(client_id) - var client_secret=$(client_secret) - var ssh_public_key = $(publickey.secureFilePath)'
+    commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key = $(publickey.secureFilePath)'
     backendAzureRmUseEnvironmentVariablesForAuthentication: false
     backendAzureRmUseEntraIdForAuthentication: false
-    backendServiceArm: 'azure-devops-service-connection'
-    backendAzureRmResourceGroupName: 'techtutorialwithram_group'
-    backendAzureRmStorageAccountName: 'ramkubernetesxyz'
-    backendAzureRmContainerName: 'ram_kubernetes'
-    backendAzureRmKey: 'ram_k8s'
-- task: TerraformTaskV4@4
-  inputs:
-    provider: 'azurerm'
-    command: 'apply'
-    workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/azure/kubernetes'
-    commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key = $(ssh_public_key)'
     backendServiceArm: 'azure-devops-service-connection'
     backendAzureRmResourceGroupName: 'techtutorialwithram_group'
     backendAzureRmStorageAccountName: 'ramkubernetesxyz'
