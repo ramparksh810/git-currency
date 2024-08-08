@@ -16,11 +16,9 @@ steps:
     provider: 'azurerm'
     command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/azure/kubernetes'
-    commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key = $(publickey.secureFilePath)'
-    backendAzureRmUseEnvironmentVariablesForAuthentication: false
-    backendAzureRmUseEntraIdForAuthentication: false
+    commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key=$(publickey.secureFilePath)'
     backendServiceArm: 'azure'
     backendAzureRmResourceGroupName: 'techtutorialwithram_group'
-    backendAzureRmStorageAccountName: 'ramkubernetesxyz'
-    backendAzureRmContainerName: 'ram_kubernetes'
-    backendAzureRmKey: 'ram_k8s'
+    backendAzureRmStorageAccountName: 'azueaccvms'
+    backendAzureRmContainerName: 'ramk8s'
+    backendAzureRmKey: 'ram_kubernetes'
