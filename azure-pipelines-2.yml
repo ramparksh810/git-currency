@@ -19,7 +19,7 @@ steps:
     commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key = $(publickey.secureFilePath)'
     backendAzureRmUseEnvironmentVariablesForAuthentication: false
     backendAzureRmUseEntraIdForAuthentication: false
-    backendServiceArm: 'azure-devops-service-connection'
+    backendServiceArm: 'azure'
     backendAzureRmResourceGroupName: 'techtutorialwithram_group'
     backendAzureRmStorageAccountName: 'ramkubernetesxyz'
     backendAzureRmContainerName: 'ram_kubernetes'
