@@ -18,6 +18,8 @@ steps:
     command: 'init'
     workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/azure/kubernetes'
     commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key=$(publickey.secureFilePath)'
+    backendAzureRmUseEnvironmentVariablesForAuthentication: true
+    backendAzureRmUseEntraIdForAuthentication: true
     backendServiceArm: 'azure'
     backendAzureRmResourceGroupName: 'techtutorialwithram_group'
     backendAzureRmStorageAccountName: 'azueaccvms'
