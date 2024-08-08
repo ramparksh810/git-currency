@@ -6,8 +6,9 @@ pool:
 
 steps:
 - script: echo Hello, world!
-  displayName: 'Run a one-line script'
 - bash: ls-R $(System.DefaultWorkingDirectory)
+  displayName: 'Run a one-line script'
+
 - task: DownloadSecureFile@1
   name: publickey
   inputs:
