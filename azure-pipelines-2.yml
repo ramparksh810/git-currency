@@ -11,7 +11,7 @@ steps:
   name: publickey
   inputs:
     secureFile: 'azure_rsa.pub'
-- task: TerraformTaskV4@4
+- task: TerraformCLI@2
   inputs:
     provider: 'azurerm'
     command: 'init'
