@@ -6,7 +6,7 @@ pool:
 
 steps:
 - script: echo Hello, world!
-- bash: ls -R $(System.DefaultWorkingDirectory)/configuration/iaac/azure/kubernetes
+- bash: ls -R $(System.DefaultWorkingDirectory)/01-currency-exchange-microservice-basic/configuration/iaac/azure/kubernetes
   displayName: 'Run a one-line script'
 
 - task: DownloadSecureFile@1
