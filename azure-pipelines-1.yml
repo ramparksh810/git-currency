@@ -19,7 +19,7 @@ steps:
     backendType: 'azurerm'
     backendServiceArm: 'azure-devops-service-connection'
     backendAzureRmResourceGroupName: 'techtutorialwithram_group'
-    backendAzureRmStorageAccountName: 'azueaccvms'
-    backendAzureRmContainerName: 'ramk8s'
-    backendAzureRmKey: 'ram_kubernetes'
+    backendAzureRmStorageAccountName: 'azueaccvmsabc'
+    backendAzureRmContainerName: 'ramk8s1'
+    backendAzureRmKey: 'ram_kubernetes123'
     allowTelemetryCollection: true
