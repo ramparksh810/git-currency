@@ -18,8 +18,9 @@ steps:
     commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key=$(publickey.secureFilePath)'
     backendType: 'azurerm'
     backendServiceArm: 'Pay-As-You-Go(6af2d315-239c-469c-a2e0-36825c790c3b)'
+    ensureBackend: true
     backendAzureRmResourceGroupName: 'techtutorialwithram_group'
-    backendAzureRmStorageAccountName: 'azueaccvmsabc'
+    backendAzureRmStorageAccountName: 'azueaccvm'
     backendAzureRmContainerName: 'ramk8s1'
     backendAzureRmKey: 'ram_kubernetes123'
-    allowTelemetryCollection: true
+    allowTelemetryCollection: false
