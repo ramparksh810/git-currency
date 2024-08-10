@@ -20,7 +20,7 @@ steps:
     backendServiceArm: 'Pay-As-You-Go(6af2d315-239c-469c-a2e0-36825c790c3b)'
     ensureBackend: true
     backendAzureRmResourceGroupName: 'techtutorialwithram_group'
-    backendAzureRmStorageAccountName: 'azueaccvm'
+    backendAzureRmStorageAccountName: 'azurerm'
     backendAzureRmContainerName: 'ramk8s1'
     backendAzureRmKey: 'ram_kubernetes123'
     allowTelemetryCollection: false
