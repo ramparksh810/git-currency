@@ -17,7 +17,7 @@ steps:
     workingDirectory: '$(System.DefaultWorkingDirectory)/01-currency-exchange-microservice-basic/configuration/iaac/azure/kubernetes'
     commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key=$(publickey.secureFilePath)'
     backendType: 'azurerm'
-    backendServiceArm: 'azure'
+    backendServiceArm: 'azure-devops-service-connection'
     backendAzureRmResourceGroupName: 'techtutorialwithram_group'
     backendAzureRmStorageAccountName: 'azueaccvms'
     backendAzureRmContainerName: 'ramk8s'
