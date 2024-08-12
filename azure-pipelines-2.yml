@@ -13,7 +13,7 @@ steps:
   name: publickey
   inputs:
     secureFile: 'azure_rsa.pub'
-- task: TerraformCLI@2
+- task: TerraformTaskV4@4
   inputs:
     provider: 'azurerm'
     command: 'init'
@@ -26,3 +26,4 @@ steps:
     backendAzureRmStorageAccountName: 'azueaccvms'
     backendAzureRmContainerName: 'ramk8s'
     backendAzureRmKey: 'ram_kubernetes'
+    
